@@ -24,4 +24,4 @@ script:
 
 after_script:
   - sudo service nginx stop
-cache: true 
+#cache: true 
