@@ -10,6 +10,7 @@ addons:
   hosts:
     - example.org
 
+
 before_script:
   - sudo apt-get update
   - sudo apt-get install nginx
