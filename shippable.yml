@@ -1,6 +1,5 @@
 language: php
 
-
 php:
 #  - 5.4
   - 5.5
@@ -8,7 +7,7 @@ php:
 addons:
   hosts:
     - example.org
-
+archive: true
 
 before_script:
   - sudo apt-get update
@@ -21,6 +20,7 @@ before_script:
 
 script:
   - phpunit  --log-junit shippable/testresults/junit.xml --coverage-xml shippable/codecoverage tests/ExampleTest.php
+
 
 
 after_script:
