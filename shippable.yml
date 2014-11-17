@@ -1,7 +1,7 @@
 language: php
 
 php:
-#  - 5.4
+  - 5.4
   - 5.5
 
 addons:
@@ -20,8 +20,6 @@ before_script:
 
 script:
   - phpunit  --log-junit shippable/testresults/junit.xml --coverage-xml shippable/codecoverage tests/ExampleTest.php
-
-
 
 after_script:
   - sudo service nginx stop
