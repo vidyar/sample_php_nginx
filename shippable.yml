@@ -25,7 +25,6 @@ script:
   - phpunit  --log-junit shippable/testresults/junit.xml --coverage-xml shippable/codecoverage tests/ExampleTest.php
 
 
-
 after_script:
   - sudo service nginx stop
 cache: true 
