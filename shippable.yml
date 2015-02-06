@@ -11,6 +11,9 @@ addons:
   hosts:
     - example.org
 
+branches:
+  only:
+    - master
 
 before_script:
   - sudo apt-get update
