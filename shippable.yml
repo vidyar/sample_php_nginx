@@ -36,5 +36,5 @@ notifications:
 after_script:
   - sudo service nginx stop
   
-cache: true 
+#cache: true 
 build_image: shippable/minv2
