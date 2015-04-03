@@ -24,4 +24,8 @@ script:
 after_script:
   - sudo service nginx stop
 #cache: true 
-build_image: shippable/minv2:beta
+#build_image: shippable/minv2:beta
+
+after_success:
+  - echo "build ran successfully"
+  
