@@ -11,6 +11,8 @@ addons:
   hosts:
     - example.org
 
+env:
+- secure: cubiMXQ1fupuTeyusW4zRKi/VKXCnsEHU5Clfx1wn7a5EKuHhTrtSezz29MGhNR+QFtKbBMdWML9GGbIWn2ODNyelvtGl3cr9CUCuJUV2+fyFjkpBR4+2l/O1xSH4DtFf3gZZEIwFOiRrj5k/YWxMnJFm63SBn+jxHOf7KceNo4T4Zzr9u0l33oPjhQHIImYtAJn8oek0ndFuZeL/apfsrenJjzV8xQVlpsz2TzP4zd6Uhg22jo2u+61YBtK7bx8f06udVu2ubQmYnv5vx75oz6aoOacDdnVfvxnMUSnyeHYsI3Ud6Kk1z+1GXsmF12hdfANZ6jBqWmlNDbzxYxO1Q==
 
 before_script:
   - sudo apt-get update
@@ -23,7 +25,7 @@ before_script:
 
 script:
   - phpunit  --log-junit shippable/testresults/junit.xml --coverage-xml shippable/codecoverage tests/ExampleTest.php
-
+  - echo $beta
 
 after_script:
   - sudo service nginx stop
