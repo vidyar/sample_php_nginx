@@ -29,5 +29,5 @@ after_script:
   - sudo service nginx stop
 cache: true 
 
-
+archive: true
 build_image: shippable/minv2
